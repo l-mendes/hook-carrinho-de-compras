@@ -47,11 +47,6 @@ const Cart = (): JSX.Element => {
   function handleProductDecrement(product: Product) {
     const { id: productId, amount } = product;
 
-    if (product.amount === 1) {
-      removeProduct(product.id);
-      return;
-    }
-
     updateProductAmount({
       productId,
       amount: amount - 1
