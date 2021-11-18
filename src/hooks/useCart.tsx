@@ -112,7 +112,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         return;
       }
 
-      if (amount < 0) {
+      if (amount < 1) {
         toast.error('Erro na alteração de quantidade do produto');
         return;
       }
